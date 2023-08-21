@@ -1,0 +1,141 @@
+/* KanbanBoard.css */
+
+.kanban-board {
+    /* Your kanban board styles */
+  }
+  
+  .display-container {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .display-dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .display-button {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .display-button:hover {
+    background-color: #f5f5f5;
+    color: #000;
+    border-color: #bbb;
+  }
+  
+  .display-button.active {
+    color: #007bff;
+  }
+  
+  .options-box {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+  }
+  
+  .display-button.active + .options-box {
+    display: block;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grouping-option,
+  .ordering-option {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .grouping-option label,
+  .ordering-option label {
+    margin-right: 5px;
+  }
+  
+  .options select {
+    padding: 5px;
+    width: 100%;
+  }
+
+  /* Kanban columns container */
+.kanban-columns {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Individual Kanban column */
+  .kanban-column {
+    flex: 1;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* KanbanBoard.css */
+
+/* ... Previous styles ... */
+
+/* Kanban columns container */
+.kanban-columns {
+    display: flex;
+    gap: 10px; /* Smaller gap between columns */
+  }
+  
+  /* Individual Kanban column */
+  .kanban-column {
+    flex: 1;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 12px; /* Smaller font size for column title */
+  }
+  
+  /* Column title */
+  .column-title {
+    font-size: 14px; /* Slightly larger font size for column title */
+    margin-bottom: 5px;
+  }
+  
+  /* + and ... signs */
+  .column-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 10px; /* Smaller font size for options */
+  }
+  
+  .column-options span {
+    cursor: pointer;
+  }
+  
+  /* ... Previous styles ... */
+  
+  /* Customize as needed */
+  
+  
+  /* Rest of your styles for Kanban columns and tickets */
+  
